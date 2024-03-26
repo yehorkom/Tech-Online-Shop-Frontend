@@ -1,0 +1,77 @@
+/* Базовые стили */
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* Стили контейнера */
+
+.container {
+  max-width: 1200px;
+  padding: 0 16px;
+}
+
+/* Стили списка товаров */
+
+.grid {
+  row-gap: 32px;
+}
+
+.grid .bg-white {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.grid img {
+  display: block; /* Убирает лишний пространство под изображением */
+  width: 100%; /* Ширина изображения равна ширине контейнера */
+  height: auto; /* Высота изменяется пропорционально ширине */
+  object-fit: cover; /* Обрезает изображение, чтобы оно заполняло контейнер */
+  border-radius: 0.5rem; /* Скругление углов изображения */
+}
+
+/* Стили для обертки изображения */
+.bg-white {
+  overflow: hidden; /* Обрезает все, что выходит за пределы блока */
+  border-radius: 0.5rem; /* Скругление углов блока */
+}
+
+.grid .mt-4 {
+  margin-top: 16px;
+}
+
+.grid .font-semibold {
+  font-weight: 600;
+}
+
+.grid .flex {
+  display: flex;
+}
+
+.grid .items-center {
+  align-items: center;
+}
+
+.grid .justify-between {
+  justify-content: space-between;
+}
+
+.grid .text-gray-500 {
+  color: #718096;
+}
+
+.grid .text-lg {
+  font-size: 1.125rem;
+}
+
+.grid .text-sm {
+  font-size: 0.875rem;
+}
+
+.grid .text-green-500 {
+  color: #10b981;
+}
+
+.grid .text-red-500 {
+  color: #ef4444;
+}
