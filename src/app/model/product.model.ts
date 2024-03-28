@@ -1,9 +1,9 @@
 export interface Product {
 
-  model: string;
-  description: string;
-  price: number;
-  availability: boolean;
+  model: string | null;
+  price: number | null;
+  description: string | null;
+  availability?: boolean;
   image?: string;
   brandId?: number;
   typeId?: number;

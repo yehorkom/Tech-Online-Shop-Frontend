@@ -1,0 +1,41 @@
+<!-- product-add.component.html -->
+<div class="container mx-auto">
+  <h2 class="text-3xl font-bold text-center mt-4">Добавление товара</h2>
+  <div class="flex justify-center mt-8">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()" class="w-full max-w-lg">
+      <!-- Поля для модели, описания, цены, доступности, изображения, бренда и типа -->
+      <div class="mb-4">
+        <label for="model">Модель:</label>
+        <input formControlName="model" type="text" id="model" required>
+      </div>
+      <div class="mb-4">
+        <label for="description">Описание:</label>
+        <textarea formControlName="description" id="description"></textarea>
+      </div>
+      <div class="mb-4">
+        <label for="price">Цена:</label>
+        <input formControlName="price" type="number" id="price" required min="0.01">
+      </div>
+      <div class="mb-4">
+        <label for="availability">Доступность:</label>
+        <input formControlName="availability" type="checkbox" id="availability">
+      </div>
+      <div class="mb-4">
+        <label for="image">Изображение:</label>
+        <input formControlName="image" type="text" id="image">
+      </div>
+      <div class="mb-4">
+        <label for="brandId">ID Бренда:</label>
+        <input formControlName="brandId" type="number" id="brandId">
+      </div>
+      <div class="mb-4">
+        <label for="typeId">ID Типа:</label>
+        <input formControlName="typeId" type="number" id="typeId">
+      </div>
+      <button type="submit" [disabled]="productForm.invalid">Добавить товар</button>
+      <a routerLink="/" class="bg-yellow-400 hover:bg-gray-700 text-white  font-bold py-3.5 px-4 rounded">
+        Вернуться на главную
+      </a>
+    </form>
+  </div>
+</div>
