@@ -6,7 +6,7 @@ import {Router} from "@angular/router";
 @Component({
   selector: 'app-add',
   templateUrl: './product.add.component.html',
-  styleUrl: './product.add.component.css'
+  styleUrl: './product.add.component.scss'
 })
 export class ProductAddComponent {
   productForm = new FormGroup({
@@ -22,7 +22,7 @@ export class ProductAddComponent {
 
   constructor(private productService: ProductService, private router: Router) {
     this.productService.productCreated.subscribe(() => {
-      this.router.navigate(['/products']); // Перенаправление на страницу со списком товаров
+      this.router.navigate(['/products']);
     });
   }
 
@@ -31,7 +31,6 @@ export class ProductAddComponent {
       this.productService.createProduct(this.productForm.value).subscribe(
         (newProduct) => {
           console.log('Товар успешно добавлен', newProduct);
-          // Обновление списка товаров или перенаправление
         },
         (error) => {
           console.error('Произошла ошибка при добавлении товара', error);

@@ -4,10 +4,12 @@ import {ProductAddComponent} from "./product/add/product.add.component";
 import {ProductListComponent} from "./product/list/product.list.component";
 import {HomeComponent} from "./pages/home.component";
 
+// import {canActivate} from "./service/auth/can.activate";
+
 const routes: Routes = [
-  { path: '', component: HomeComponent }, // Перенаправление с главной страницы на список товаров
-  { path: 'products', component: ProductListComponent }, // Маршрут для списка товаров
-  { path: 'add-product', component: ProductAddComponent }, // Маршрут для добавления товара
+  { path: '', component: HomeComponent },
+  { path: 'products', component: ProductListComponent },
+  { path: 'add-product', component: ProductAddComponent},
 ];
 
 @NgModule({

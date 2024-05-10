@@ -5,7 +5,7 @@ import {Product} from "../../model/product.model";
 @Component({
   selector: 'app-product-list',
   templateUrl: "product.list.component.html",
-  styleUrl: "product.list.component.css"
+  styleUrl: "product.list.component.scss"
 })
 export class ProductListComponent implements OnInit {
 
@@ -14,7 +14,7 @@ export class ProductListComponent implements OnInit {
 
   constructor(private productService: ProductService) {
     this.productService.productCreated.subscribe(() => {
-      this.loadProducts(); // Обновление списка товаров
+      this.loadProducts();
     });
   }
 
@@ -36,7 +36,7 @@ export class ProductListComponent implements OnInit {
     this.productService.deleteProduct(productId).subscribe(
       () => {
         console.log('Product deleted successfully');
-        this.loadProducts(); // Reload the products after deletion
+        this.loadProducts();
       },
       error => console.error(error)
     );

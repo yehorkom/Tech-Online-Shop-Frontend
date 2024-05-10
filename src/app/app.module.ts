@@ -9,8 +9,9 @@ import { ProductAddComponent } from './product/add/product.add.component';
 import { ProductItemComponent } from './product/item/product.item.component';
 import { ProductEditComponent } from './product/edit/product.edit.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import { LoginComponent } from './login/login/login.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {HomeComponent} from "./pages/home.component";
-import { AuthServiceComponent } from './service/auth/auth.service.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { AuthServiceComponent } from './service/auth/auth.service.component';
     ProductItemComponent,
     ProductEditComponent,
     HomeComponent,
-    AuthServiceComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +29,9 @@ import { AuthServiceComponent } from './service/auth/auth.service.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

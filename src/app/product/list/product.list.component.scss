@@ -23,17 +23,16 @@ body {
 }
 
 .grid img {
-  display: block; /* Убирает лишний пространство под изображением */
-  width: 100%; /* Ширина изображения равна ширине контейнера */
-  height: auto; /* Высота изменяется пропорционально ширине */
-  object-fit: cover; /* Обрезает изображение, чтобы оно заполняло контейнер */
-  border-radius: 0.5rem; /* Скругление углов изображения */
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
 
-/* Стили для обертки изображения */
 .bg-white {
-  overflow: hidden; /* Обрезает все, что выходит за пределы блока */
-  border-radius: 0.5rem; /* Скругление углов блока */
+  overflow: hidden;
+  border-radius: 0.5rem;
 }
 
 .grid .mt-4 {
