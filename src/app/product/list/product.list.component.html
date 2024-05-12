@@ -3,10 +3,11 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
     <div *ngFor="let product of products; let i = index">
+
       <div class="bg-white rounded-lg shadow-md p-4">
         <img *ngIf="product.image" [src]="product.image" alt="{{ product.model }}" class="w-full h-48 object-cover rounded-t-lg">
         <div class="mt-4">
-          <h3 class="text-xl font-semibold">{{ product.model }}</h3>
+          <h3 (click)="openProduct(product)" class="text-xl cursor-pointer font-semibold">{{ product.model }}</h3>
           <button class="border py-2 px-4 rounded bg-blue-800" (click)="selectedProductIndex = selectedProductIndex === i ? null : i">Показать описание</button>
           <p *ngIf="selectedProductIndex === i" class="text-gray-500">{{ product.description }}</p>
           <div class="flex items-center justify-between mt-4">
