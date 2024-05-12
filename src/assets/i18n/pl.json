@@ -1,0 +1,14 @@
+{
+  "HOME": {
+    "TITLE": "Strona główna sklepu",
+    "BUTTON-ADD": "Dodaj nowy produkt",
+    "BUTTON-LIST": "Lista produktów",
+    "BUTTON-PROD": "Produkt"
+  },
+  "BUTTON": {
+    "LANG": {
+      "UA": "UA",
+      "PL": "PL"
+    }
+  }
+}

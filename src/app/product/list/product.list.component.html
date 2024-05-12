@@ -9,7 +9,7 @@
         <div class="mt-4">
           <h3 (click)="openProduct(product)" class="text-xl cursor-pointer font-semibold">{{ product.model }}</h3>
           <button class="border py-2 px-4 rounded bg-blue-800" (click)="selectedProductIndex = selectedProductIndex === i ? null : i">Показать описание</button>
-          <p *ngIf="selectedProductIndex === i" class="text-gray-500">{{ product.description }}</p>
+          <p *ngIf="selectedProductIndex === i" class="text-gray-500">{{ translate.currentLang === 'ua' ? product.descriptionUA : product.descriptionPL }}</p>
           <div class="flex items-center justify-between mt-4">
             <p class="text-lg font-bold">Цена: {{ product.price }} zl.</p>
             <p class="text-sm font-medium">

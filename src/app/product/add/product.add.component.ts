@@ -11,7 +11,8 @@ import {Router} from "@angular/router";
 export class ProductAddComponent {
   productForm = new FormGroup({
     model: new FormControl('', Validators.required),
-    description: new FormControl(''),
+    description_ua: new FormControl(''),
+    description_pl: new FormControl(''),
     price: new FormControl(null, [Validators.required, Validators.min(0.01)]),
     availability: new FormControl(true),
     image: new FormControl(''),

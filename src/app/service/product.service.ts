@@ -24,12 +24,14 @@ export class ProductService {
 
   createProduct(product: ɵTypedOrUntyped<{
     price: FormControl<number | null>;
-    description: FormControl<string | null>;
+    descriptionUA: FormControl<string | null>;
+    descriptionPL: FormControl<string | null>;
     model: FormControl<string | null>;
     availability: FormControl<boolean | null>
   }, ɵFormGroupValue<{
     price: FormControl<number | null>;
-    description: FormControl<string | null>;
+    descriptionUA: FormControl<string | null>;
+    descriptionPL: FormControl<string | null>;
     model: FormControl<string | null>;
     availability: FormControl<boolean | null>
   }>, any>): Observable<Product> {

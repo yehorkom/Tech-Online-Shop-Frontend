@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ProductService} from "../../service/product.service";
 import {Product} from "../../model/product.model";
 import {NavigationExtras, Router} from "@angular/router";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-product-list',
@@ -14,7 +15,8 @@ export class ProductListComponent implements OnInit {
   selectedProductIndex: number | null = null;
 
   constructor(private productService: ProductService,
-              private router: Router) {
+              private router: Router,
+              public translate: TranslateService) {
     this.productService.productCreated.subscribe(() => {
       this.loadProducts();
     });
@@ -30,6 +32,7 @@ export class ProductListComponent implements OnInit {
       next: (data) => {
         this.products = data;
       },
+
       error: (error) => {
         console.error('Произошла ошибка при получении списка товаров', error);
       }
