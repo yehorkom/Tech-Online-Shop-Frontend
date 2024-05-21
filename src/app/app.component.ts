@@ -11,5 +11,6 @@ export class AppComponent {
     translate.setDefaultLang('ua');
     translate.use('ua');
   }
+
   title = 'tech-online-store-frontend';
 }

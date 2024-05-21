@@ -1,14 +1,53 @@
 {
-  "HOME": {
-    "TITLE": "Strona główna sklepu",
-    "BUTTON-ADD": "Dodaj nowy produkt",
-    "BUTTON-LIST": "Lista produktów",
-    "BUTTON-PROD": "Produkt"
-  },
   "BUTTON": {
     "LANG": {
       "UA": "UA",
       "PL": "PL"
     }
+  },
+
+  "HEADER": {
+    "BUTTON-ABOUT": "O nas",
+    "BUTTON-SERVICES": "Usługi",
+    "BUTTON-PRODUCT": "Produkty",
+    "BUTTON-CONTACTS": "Kontakt",
+    "BUTTON-TG": "Przejdź do kanału Telegramu",
+    "BUTTON-TIK-TOK": "Wejdź na naszego tik toka",
+    "INFO-TITLE": "Szczegółowe informacje w kanale telegramu"
+  },
+
+  "HOME": {
+    "BUY-SELL": "SPRZEDAŻ I KUPNO UŻYWANEGO SPRZĘTU HoReCa",
+
+    "MISSION-TITLE": "NASZA MISJA I WARTOŚCI",
+    "MISSION-TEXT1": "Dążyliśmy do dostarczenia naszym klientom wysokiej jakości sprzętu gastronomicznego i handlowego. W naszej ofercie znajduje się sprzęt, który przeszedł dokładne sprawdzenie i jest w maksymalnie dobrym stanie.",
+    "MISSION-TARGET": "NASZY CEL",
+    "MISSION-TEXT2": "Zapewnić Państwa biznesowi niezawodne narzędzia, które wspomagają efektywną działalność.",
+
+    "ADVANTAGES-TITLE": "ZALETY PRACY Z NAMI",
+    "ADVANTAGES-TEXT1": "Oferujemy naszym klientom nie tylko szeroki asortyment wysokiej jakości używanego sprzętu, który stale się odnawia, ale także kompleksowe podejście do rozwiązywania ich potrzeb.",
+    "ADVANTAGES-TEXT2": "Nasza firma wyróżnia się bogatym doświadczeniem na rynku, profesjonalizmem naszych specjalistów oraz wysokim poziomem obsługi.",
+    "ADVANTAGES-TEXT3": "Gwarantujemy niezawodność, skuteczność i indywidualne podejście do każdego klienta.",
+
+    "TEAM-TITLE": "NASZ ZESPÓŁ I EKSPERCI",
+    "TEAM-TEXT1": "Nasi pracownicy to wysoko wykwalifikowani specjaliści z doświadczeniem w dziedzinie sprzętu gastronomicznego i handlowego.",
+    "TEAM-TEXT2": "Jesteśmy gotowi pomóc Państwu w wyborze sprzętu, udzielić porad dotyczących jego użytkowania i obsługi, a także przeprowadzić wszelkie prace związane z rekonstrukcją i modernizacją Państwa przestrzeni handlowej.",
+
+    "SERVICES-TITLE1": "NASZE USŁUGI",
+    "SERVICES-TEXT1": "Sprzedaż urządzeń gastronomicznych i handlowych.",
+    "SERVICES-TEXT2": "Konsultacje dotyczące wyboru urządzeń.",
+    "SERVICES-TITLE2": "Demontaż i likwidacja lokali handlowych.",
+    "SERVICES-TEXT3": "Specjalizujemy się również w usługach demontażu, likwidacji i rekonstrukcji lokali handlowych. Nasz doświadczony zespół specjalistów jest gotowy pomóc Państwu w uwolnieniu przestrzeni, przeprowadzeniu przebudowy lub modernizacji Państwa biznesu.",
+
+    "EQUIPMENT-TITLE": "RODZAJE DOSTĘPNEGO WYPOSAŻENIA.",
+    "EQUIPMENT-TEXT1": "Urządzenia chłodnicze i mroźnicze",
+    "EQUIPMENT-TEXT2": "Witryny chłodnicze, stoły chłodnicze, szafy chłodnicze, szybkie zamrażarki, zamrażarki skrzyniowe, generatory lodu",
+    "EQUIPMENT-BUTTON": "Pokaż produkty",
+    "EQUIPMENT-TEXT3": "Wyposażenie kuchenne",
+    "EQUIPMENT-TEXT4": "Grille i płycie grillowe, piekarniki, kuchenki oraz płyty grzewcze, frytownice, parowary konwekcyjne, kuchenki mikrofalowe, przemysłowe miksera",
+    "EQUIPMENT-TEXT5": "Wyposażenie do kawy",
+    "EQUIPMENT-TEXT6": "Maszyny do kawy, młynki do kawy, ekspresy do kawy, grupy do kawy",
+    "EQUIPMENT-TEXT7": "Sprzęt piekarniczy",
+    "EQUIPMENT-TEXT8": "Piekarniki, piece do pizzy, maszyny do mieszania ciasta, formy do pieczenia, parowary konwekcyjne"
   }
 }
