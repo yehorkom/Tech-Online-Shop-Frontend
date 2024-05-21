@@ -49,5 +49,18 @@
     "EQUIPMENT-TEXT6": "Maszyny do kawy, młynki do kawy, ekspresy do kawy, grupy do kawy",
     "EQUIPMENT-TEXT7": "Sprzęt piekarniczy",
     "EQUIPMENT-TEXT8": "Piekarniki, piece do pizzy, maszyny do mieszania ciasta, formy do pieczenia, parowary konwekcyjne"
+  },
+
+  "FOOTER": {
+    "ADDRESS": "Adres",
+    "CONTACTS": "Kontakt",
+    "FORM": "Formularz informacji zwrotnej",
+    "BUTTON-CALL": "Oddzwonić do mnie",
+    "RIGHTS": "Wszelkie prawa zastrzeżone 2024",
+    "STATUTE": "Regulamin",
+    "PRIVACY":"Polityka prywatności",
+    "COOKIES": "Polityka Cookies",
+    "FORM-NAME" : "Imię i nazwisko",
+    "FORM-PHONE": "Telefon kontaktowy"
   }
 }

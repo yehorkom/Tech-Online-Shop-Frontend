@@ -1,28 +1,28 @@
-<div class="container mx-auto" *ngIf="products;">
-  <h2 class="text-3xl font-bold text-center mt-4">Список товаров</h2>
+<div class="container mx-auto" *ngIf="products">
+  <h2 class="text-3xl font-bold text-center mt-4 text-white">Список товаров</h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-    <div *ngFor="let product of products; let i = index">
-
-      <div class="bg-white rounded-lg shadow-md p-4">
-        <img *ngIf="product.image" [src]="product.image" alt="{{ product.model }}" class="w-full h-48 object-cover rounded-t-lg">
-        <div class="mt-4">
-          <h3 (click)="openProduct(product)" class="text-xl cursor-pointer font-semibold">{{ product.model }}</h3>
-          <button class="border py-2 px-4 rounded bg-blue-800" (click)="selectedProductIndex = selectedProductIndex === i ? null : i">Показать описание</button>
-          <p *ngIf="selectedProductIndex === i" class="text-gray-500">{{ translate.currentLang === 'ua' ? product.descriptionUA : product.descriptionPL }}</p>
-          <div class="flex items-center justify-between mt-4">
-            <p class="text-lg font-bold">Цена: {{ product.price }} zl.</p>
-            <p class="text-sm font-medium">
-              Наличие:
-              <span [ngClass]="{'text-green-500': product.availability, 'text-red-500': !product.availability}">
-                {{ product.availability ? 'В наличии' : 'Нет в наличии' }}
-              </span>
-            </p>
-          </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 px-4">
+    <div *ngFor="let product of products; let i = index" class="bg-main-blue rounded-lg shadow-md p-6 transition transform hover:scale-105">
+      <img *ngIf="product.image" [src]="product.image" alt="{{ product.model }}" class="w-full h-48 object-cover rounded-t-lg">
+      <div class="mt-4 text-white">
+        <h3 (click)="openProduct(product)" class="text-xl cursor-pointer font-semibold">{{ product.model }}</h3>
+        <button class="border border-white py-2 px-4 rounded bg-yellow-400 hover:bg-gray-700 text-black font-bold mt-2" (click)="selectedProductIndex = selectedProductIndex === i ? null : i">Показать описание</button>
+        <p *ngIf="selectedProductIndex === i" class="text-gray-200 mt-2">{{ translate.currentLang === 'ua' ? product.descriptionUA : product.descriptionPL }}</p>
+        <div class="flex items-center justify-between mt-4">
+          <p class="text-lg font-bold">Цена: {{ product.price }} zl.</p>
+          <p class="text-sm font-medium">
+            Наличие:
+            <span [ngClass]="{'text-green-400': product.availability, 'text-red-400': !product.availability}">
+              {{ product.availability ? 'В наличии' : 'Нет в наличии' }}
+            </span>
+          </p>
         </div>
       </div>
     </div>
-    <a routerLink="/" class="bg-yellow-400 hover:bg-gray-700 text-white  font-bold py-3.5 px-4 rounded">
+  </div>
+
+  <div class="text-center mt-8">
+    <a routerLink="/" class="bg-yellow-400 hover:bg-gray-700 text-white font-bold py-3.5 px-6 rounded">
       Вернуться на главную
     </a>
   </div>

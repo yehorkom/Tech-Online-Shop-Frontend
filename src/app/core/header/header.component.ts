@@ -18,4 +18,12 @@ export class HeaderComponent {
   public scrollToFooter(): void {
     document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });
   }
+
+  public scrollToServices(): void {
+    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  public scrollToAbout(): void {
+    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
